@@ -4,7 +4,6 @@
  * and sending logs to the ingestion pipeline.
  */
 
-const { v4: uuidv4 } = require('uuid');
 
 const PII_PATTERNS = [
   { re: /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g, replace: '[EMAIL]' },
